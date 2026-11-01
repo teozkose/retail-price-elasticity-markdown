@@ -1,0 +1,1 @@
+Raw data is not committed. `python data/download.py` fetches the UCI Online Retail II workbook (45 MB, CC BY 4.0) and caches it here as `transactions.parquet`. Later steps write `weekly.parquet` next to it.
