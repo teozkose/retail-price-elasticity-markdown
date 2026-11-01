@@ -1,0 +1,6 @@
+scenario,revenue,margin,units,discount_cost,products_marked_down,avg_depth
+no_markdown,128853.0,57984.0,42746.0,0.0,0,0.0
+max_revenue,149342.0,55099.0,56981.0,22008.0,40,0.129
+revenue_margin,147696.0,57993.0,53728.0,15401.0,32,0.082
+max_margin,141193.0,59671.0,49019.0,7028.0,18,0.04
+budget_capped,146303.0,58749.0,52592.0,12885.0,29,0.069

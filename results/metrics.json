@@ -1,0 +1,114 @@
+{
+  "elasticity": {
+    "products_modeled": 60,
+    "products_usable": 45,
+    "share_significant_negative": 0.75,
+    "median_elasticity": -2.3,
+    "iqr_elasticity": [
+      -3.07,
+      -1.44
+    ],
+    "median_r2": 0.41,
+    "examples": [
+      {
+        "sku": "22910",
+        "description": "PAPER CHAIN KIT VINTAGE CHRISTMAS",
+        "elasticity": -3.18,
+        "r2": 0.93
+      },
+      {
+        "sku": "22086",
+        "description": "PAPER CHAIN KIT 50'S CHRISTMAS ",
+        "elasticity": -2.04,
+        "r2": 0.82
+      },
+      {
+        "sku": "84029E",
+        "description": "RED WOOLLY HOTTIE WHITE HEART.",
+        "elasticity": -2.6,
+        "r2": 0.82
+      },
+      {
+        "sku": "21485",
+        "description": "RETROSPOT HEART HOT WATER BOTTLE",
+        "elasticity": -1.77,
+        "r2": 0.81
+      },
+      {
+        "sku": "84029G",
+        "description": "KNITTED UNION FLAG HOT WATER BOTTLE",
+        "elasticity": -0.7,
+        "r2": 0.78
+      }
+    ]
+  },
+  "optimization": {
+    "products": 45,
+    "depths": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ],
+    "window_weeks": 4,
+    "assumptions": {
+      "cost_share_of_list_price": 0.55,
+      "inventory_weeks": 6,
+      "budget_share": 0.1
+    },
+    "scenarios": [
+      {
+        "scenario": "no_markdown",
+        "revenue": 128853.0,
+        "margin": 57984.0,
+        "units": 42746.0,
+        "discount_cost": 0.0,
+        "products_marked_down": 0,
+        "avg_depth": 0.0
+      },
+      {
+        "scenario": "max_revenue",
+        "revenue": 149342.0,
+        "margin": 55099.0,
+        "units": 56981.0,
+        "discount_cost": 22008.0,
+        "products_marked_down": 40,
+        "avg_depth": 0.129
+      },
+      {
+        "scenario": "revenue_margin",
+        "revenue": 147696.0,
+        "margin": 57993.0,
+        "units": 53728.0,
+        "discount_cost": 15401.0,
+        "products_marked_down": 32,
+        "avg_depth": 0.082
+      },
+      {
+        "scenario": "max_margin",
+        "revenue": 141193.0,
+        "margin": 59671.0,
+        "units": 49019.0,
+        "discount_cost": 7028.0,
+        "products_marked_down": 18,
+        "avg_depth": 0.04
+      },
+      {
+        "scenario": "budget_capped",
+        "revenue": 146303.0,
+        "margin": 58749.0,
+        "units": 52592.0,
+        "discount_cost": 12885.0,
+        "products_marked_down": 29,
+        "avg_depth": 0.069
+      }
+    ],
+    "revenue_margin_vs_no_markdown": {
+      "revenue_lift_pct": 14.6,
+      "margin_change_pct": 0.0,
+      "inventory_binding_products": 32
+    },
+    "max_revenue_inventory_binding_products": 43
+  }
+}
